@@ -289,6 +289,7 @@ void vTaskSensorRead(void *pvParameters) {
 int main() {
     setup();
 
+
     // Criação das tarefas
     xTaskCreate(vTaskServoControl, "ServoControl", 256, NULL, 1, NULL);
     xTaskCreate(vTaskSensorRead, "SensorRead", 256, NULL, 1, NULL);
